@@ -22,6 +22,7 @@ reservation process and to make it suitable for the customers to book the flight
 require. The Customers can utilize this software to make reservations, modify reservations or
 cancel a particular reservation.
 
-# Dependenices
+# Dependencies
 mysql
+
 
