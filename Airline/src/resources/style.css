@@ -1,0 +1,18 @@
+#anchor{
+
+ -fx-background-color : linear-gradient(to bottom,  #252C64 , #1A85DA ,#FFFFFF);
+}
+
+
+.tab *.tab-label {
+    -fx-rotate: 90;
+
+}
+
+.tab {
+    -fx-padding: 7em 0.25em 3em 0em;
+}
+
+.tab-header-background{
+-fx-background-color: #1A85DA;
+}

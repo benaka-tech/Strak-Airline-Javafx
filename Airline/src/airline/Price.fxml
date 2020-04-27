@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="947.0" style="-fx-background-color: #1A85DA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airline.PriceController">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="40.0" prefHeight="462.0" prefWidth="552.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="154.0" layoutY="28.0" prefHeight="39.0" prefWidth="248.0" text="Insert Price Details" textFill="#0a3bff">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="472.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/PERRSSON.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="397.0" layoutY="409.0" onAction="#Save" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #0a3bff;" text="Save" textFill="WHITE" />
+            <Label fx:id="alertLabel" layoutX="196.0" layoutY="374.0" prefHeight="17.0" prefWidth="218.0" textFill="#f50909">
+               <font>
+                  <Font name="Microsoft YaHei" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="84.0">
+               <image>
+                  <Image url="@../images/plan%20icon.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="39.0" layoutY="83.0" text="Services:-" textFill="#0a3bff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="fclass" layoutX="38.0" layoutY="138.0" mnemonicParsing="false" text="First Class">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup></JFXRadioButton>
+            <JFXRadioButton fx:id="bclass" layoutX="184.0" layoutY="138.0" mnemonicParsing="false" text="Business Class" toggleGroup="$group1" />
+            <JFXRadioButton fx:id="eclass" layoutX="382.0" layoutY="138.0" mnemonicParsing="false" text="Economy Class" toggleGroup="$group1" />
+            <JFXTextField fx:id="adultprice" layoutX="49.0" layoutY="206.0" promptText="Adult Price" />
+            <JFXTextField fx:id="childprice" layoutX="295.0" layoutY="206.0" promptText="Child Price" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="468.0" fitWidth="359.0" layoutX="584.0" layoutY="38.0">
+         <image>
+            <Image url="@../images/booking.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="9.0" onAction="#exitScreen" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #aba7a7;" text="Back" textFill="RED" />
+   </children>
+</AnchorPane>

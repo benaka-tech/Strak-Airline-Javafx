@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="649.0" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airline.FXMLDocumentController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="370.0" layoutY="214.0" onAction="#signupScreen" prefHeight="35.0" prefWidth="204.0" style="-fx-background-color: #428bca;" text="SignUp" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="370.0" layoutY="135.0" onAction="#loginScreen" prefHeight="35.0" prefWidth="204.0" style="-fx-background-color: #428bca;" text="Login" textFill="WHITE" />
+      <Label layoutX="370.0" layoutY="106.0" prefHeight="17.0" prefWidth="158.0" text="Already registered ? Login" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="189.0" prefHeight="17.0" prefWidth="139.0" text="New User? SignUp" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="395.0" fitWidth="297.0">
+         <image>
+            <Image url="@../images/TONY.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="304.0" layoutY="14.0" text="STARK AIRLINES" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT Bold Italic" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="200.0" layoutX="449.0" layoutY="355.0">
+         <image>
+            <Image url="@../images/STARK%20INDUSTRIES.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="370.0" layoutY="266.0" text="If you're admin login" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="370.0" layoutY="288.0" onAction="#adminScreen" prefHeight="35.0" prefWidth="204.0" style="-fx-background-color: #428bca;" text="Admin" textFill="WHITE" />
+   </children>
+</AnchorPane>
