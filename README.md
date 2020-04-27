@@ -24,5 +24,9 @@ cancel a particular reservation.
 
 # Dependencies
 mysql
-
+All the jar should be an folder
+jfoenix jar
+JavaFx
+Install Java 8 
+Java Mail
 
