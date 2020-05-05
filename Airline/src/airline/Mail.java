@@ -23,10 +23,10 @@ public class Mail {
     public static void main(String[] args) {
 
        
-        String to = "cjayanth35@gmail.com";
+        String to = "replace sender mail";
 
         
-        String from = "scientract@gmail.com";
+        String from = "replace revicer mail";
 
         
         String host = "smtp.gmail.com";
@@ -45,7 +45,7 @@ public class Mail {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("scientract@gmail.com", "celab@123");
+                return new PasswordAuthentication("sender mail", "pwd");
 
             }
 
